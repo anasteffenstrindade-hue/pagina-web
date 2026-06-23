@@ -3,32 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfólio 2026</title>
+  <title>TechForge Hub - Soluções Digitais & Inteligência Artificial</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Seu Nome</h1>
-    <p>Desenvolvedor Front-End | IA | UI/UX</p>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Tech<span>Forge</span></div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#servicos">Soluções</a></li>
+        <li><a href="#projetos">Ecossistema</a></li>
+        <li><a href="#metricas">Métricas</a></li>
+        <li><a href="#contato">Conectar</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero-section">
+    <div class="hero-content">
+      <span class="badge">Próxima Geração Tech</span>
+      <h1>Engenharia de Software & Ecossistemas de IA</h1>
+      <p>Desenvolvimento de plataformas escaláveis, automações inteligentes e interfaces imersivas focadas no futuro da tecnologia digital.</p>
+      <div class="hero-buttons">
+        <a href="#projetos" class="btn btn-primary">Explorar Projetos</a>
+        <a href="#contato" class="btn btn-secondary">Iniciar Parceria</a>
+      </div>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Construindo experiências digitais modernas</h2>
-    <p>HTML • CSS • JavaScript • GitHub • IA</p>
-  </section>
-
-  <section class="projects">
-    <h2>Projetos</h2>
-    <div class="projects-container">
-      <div class="card">Site IA Chatbot</div>
-      <div class="card">Dashboard Financeiro</div>
-      <div class="card">Landing Page SaaS</div>
+  <section id="servicos" class="services-section">
+    <div class="section-header">
+      <h2>Especialidades Tecnológicas</h2>
+      <p>Infraestrutura e arquitetura robustas para impulsionar a transformação digital.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon">🤖</div>
+        <h3>Modelos de IA</h3>
+        <p>Integração de LLMs, agentes autônomos e processamento de linguagem natural customizados.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">💻</div>
+        <h3>Aplicações Web</h3>
+        <p>Interfaces reativas de alta performance utilizando arquiteturas SPA e SSR modernas.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">⚡</div>
+        <h3>Automação de APIs</h3>
+        <p>Construção de pipelines de dados e microsserviços integrados de alta disponibilidade.</p>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>GitHub Pages • 2026</p>
+  <section id="projetos" class="projects-section">
+    <div class="section-header">
+      <h2>Ecossistema de Aplicações</h2>
+      <p>Uma vitrine de plataformas funcionais e sistemas desenvolvidos com foco na experiência do usuário.</p>
+    </div>
+    <div class="projects-grid">
+      
+      <div class="project-card">
+        <div class="project-image image-1"></div>
+        <div class="project-info">
+          <span class="tag">Machine Learning</span>
+          <h3>Chatbot Cognitivo Empresarial</h3>
+          <p>Assistente de suporte automatizado integrado a bases de conhecimento privadas com respostas em tempo real.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image image-2"></div>
+        <div class="project-info">
+          <span class="tag">Fintech</span>
+          <h3>Dashboard Financeiro Preditivo</h3>
+          <p>Plataforma analítica com visualização de dados complexos e projeções de mercado através de redes neurais.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image image-3"></div>
+        <div class="project-info">
+          <span class="tag">SaaS / Web</span>
+          <h3>Plataforma de Automação de Marketing</h3>
+          <p>Sistema distribuído na nuvem que otimiza fluxos de e-mail e geração de leads usando segmentação por IA.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="metricas" class="metrics-section">
+    <div class="metrics-container">
+      <div class="metric-item">
+        <h4>+45M</h4>
+        <p>Requisições Processadas</p>
+      </div>
+      <div class="metric-item">
+        <h4>99.9%</h4>
+        <p>Uptime de Aplicações</p>
+      </div>
+      <div class="metric-item">
+        <h4>24/7</h4>
+        <p>Monitoramento Ativo</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Vamos construir algo extraordinário?</h2>
+        <p>Entre em contato para discutir novos projetos, integrações de sistemas ou soluções personalizadas sob demanda.</p>
+        <div class="contact-details">
+          <p>📍 Atendimento Global / Remoto</p>
+          <p>📧 contato@techforgehub.io</p>
+        </div>
+      </div>
+      <div class="contact-form-container">
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso para o Hub!');">
+          <input type="text" placeholder="Nome Completo" required>
+          <input type="email" placeholder="E-mail Corporativo" required>
+          <textarea placeholder="Descreva brevemente a sua necessidade tecnológica..." rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechForge Hub. Operando via GitHub Pages globalmente.</p>
+    </div>
   </footer>
 
 </body>
